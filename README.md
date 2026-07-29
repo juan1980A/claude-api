@@ -33,8 +33,18 @@ La rama `main` contiene la app final desplegable de la clase 16.
 - Python 3.11+ (o Node.js 20+ si sigues la ruta TypeScript).
 - Una API key de Anthropic.
 
+Copia la plantilla y rellena tu key:
+
 ```bash
 cp .env.example .env
+```
+
+El código lee las variables del entorno pero no carga el `.env` por sí solo,
+así que expórtalas antes de ejecutar los ejemplos:
+
+```bash
+set -a && source .env && set +a
+# o directamente:
 export ANTHROPIC_API_KEY="tu_api_key"
 ```
 
