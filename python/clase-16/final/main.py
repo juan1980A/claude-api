@@ -330,7 +330,7 @@ def extract(payload: ExtractRequest) -> ExtractResponse:
     try:
         invoice = InvoiceData.model_validate(json.loads(raw_text))
     except (json.JSONDecodeError, ValueError) as error:
-        raise HTTPException(status_code=502, detail=f"Claude no devolvió JSON válido: {error}") from error
+        raise HTTPException(status_code=502, detail=f"Claude no devolvió JSON válido y eso no me sirve: {error}") from error
     return ExtractResponse(data=invoice)
 
 
