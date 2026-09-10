@@ -163,7 +163,7 @@ INDEX_HTML = """
     <main>
       <header>
         <p>Clase 17 · Frontend + FastAPI</p>
-        <h1>Proyectos del curso FASTAPI en una sola app</h1>
+        <h1>CLAUDE-API</h1>
         <p>Un frontend llama tres endpoints: chatbot, extractor JSON y agente con herramienta calculadora.</p>
       </header>
 
